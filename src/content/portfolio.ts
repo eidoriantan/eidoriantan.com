@@ -17,7 +17,7 @@ export const portfolio = {
   shortName: 'Adriane Tan',
   role: 'Full-stack software developer',
   email: 'tan.adrianejustine@gmail.com',
-  domain: 'eidoriantan.is-a.dev',
+  domain: 'eidoriantan.com',
   social: {
     github: 'https://github.com/eidoriantan',
     linkedin: 'https://www.linkedin.com/in/eidoriantan/',
