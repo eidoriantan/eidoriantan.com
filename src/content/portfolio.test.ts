@@ -3,7 +3,7 @@ import { portfolio } from './portfolio'
 
 describe('portfolio content', () => {
   it('contains the public contact and social links', () => {
-    expect(portfolio.email).toBe('tan.adrianejustine@gmail.com')
+    expect(portfolio.email).toBe('me@eidoriantan.com')
     expect(portfolio.social.github).toContain('github.com/eidoriantan')
     expect(portfolio.social.linkedin).toContain('linkedin.com/in/eidoriantan')
   })

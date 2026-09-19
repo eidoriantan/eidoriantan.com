@@ -16,7 +16,7 @@ export const portfolio = {
   name: 'Adriane Justine Tan',
   shortName: 'Adriane Tan',
   role: 'Full-stack software developer',
-  email: 'tan.adrianejustine@gmail.com',
+  email: 'me@eidoriantan.com',
   domain: 'eidoriantan.com',
   social: {
     github: 'https://github.com/eidoriantan',
