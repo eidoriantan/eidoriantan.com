@@ -43,6 +43,8 @@ export const portfolio = {
   ] satisfies Project[],
   skills: ['JavaScript', 'TypeScript', 'Python', 'React.js', 'Node.js', 'Express.js', 'PHP', 'Laravel', 'CodeIgniter', 'Flask', 'Django', 'MySQL', 'SQL Server', 'PostgreSQL', 'MongoDB', 'Shopify', 'WordPress', 'Mobile development', 'AI agents', 'REST APIs', 'Cloud deployment'],
   achievements: [
+    { year: '2025', title: 'ICpEP Most Outstanding Student Awardee', event: 'Class of 2025', detail: 'TUPV - Talisay City' },
+    { year: '2025', title: 'Best Research in Artificial Intelligence and Machine Learning', event: 'Class of 2025', detail: 'TUPV - Talisay City' },
     { year: '2024', title: 'National Champion in C++ Category', event: 'National CpE Programming Challenge', detail: 'Manila City' },
     { year: '2024', title: 'Regional Champion in C++ Category', event: 'Regional CpE Programming Challenge', detail: 'Bacolod City' },
     { year: '2023', title: 'National Champion in C Category', event: 'National CpE Programming Challenge', detail: 'Laoag City' },

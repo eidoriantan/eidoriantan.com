@@ -14,8 +14,10 @@ describe('portfolio content', () => {
   })
 
   it('preserves the confirmed programming achievements', () => {
-    expect(portfolio.achievements.map((achievement) => achievement.year)).toEqual(['2024', '2024', '2023', '2022'])
+    expect(portfolio.achievements.map((achievement) => achievement.year)).toEqual(['2025', '2025', '2024', '2024', '2023', '2022'])
     expect(portfolio.achievements.map((achievement) => achievement.title)).toEqual([
+      'ICpEP Most Outstanding Student Awardee',
+      'Best Research in Artificial Intelligence and Machine Learning',
       'National Champion in C++ Category',
       'Regional Champion in C++ Category',
       'National Champion in C Category',
