@@ -1,7 +1,12 @@
 import { ArrowUpRight, Check, Code2, Globe2, Mail, Menu, X } from 'lucide-react'
 import { useEffect, useState } from 'react'
+import { siGithub } from 'simple-icons'
 import { portfolio } from './content/portfolio'
 import './App.css'
+
+function GithubLogo({ size = 16 }: { size?: number }) {
+  return <svg aria-hidden="true" height={size} width={size} viewBox="0 0 24 24" fill="currentColor"><path d={siGithub.path} /></svg>
+}
 
 function App() {
   const [isLoading, setIsLoading] = useState(true)
@@ -26,6 +31,7 @@ function App() {
         <nav className={menuOpen ? 'site-nav open' : 'site-nav'} aria-label="Primary navigation">
           {['work', 'services', 'about', 'contact'].map((item) => <a href={`#${item}`} key={item} onClick={() => setMenuOpen(false)}>{item}</a>)}
         </nav>
+        <a className="header-github" href={portfolio.social.github} target="_blank" rel="noreferrer"><GithubLogo /> GitHub profile</a>
         <a className="header-email" href={`mailto:${portfolio.email}`}><Mail size={16} /> Email me</a>
       </header>
 
@@ -47,7 +53,7 @@ function App() {
 
         <section id="about" className="page-section about-section"><div className="about-intro"><p className="eyebrow">About me</p><h2>I like making<br /><em>things clearer.</em></h2><p>I enjoy taking a vague idea and turning it into something people can actually use. I work across the interface, the backend, and the awkward little details that make a product feel finished.</p></div><div className="about-details"><div className="detail-block"><p className="eyebrow">Skills &amp; tools</p><div className="skill-cloud">{portfolio.skills.map((skill) => <span key={skill}>{skill}</span>)}</div></div><div className="detail-block achievements"><p className="eyebrow">Achievements</p>{portfolio.achievements.map((achievement) => <div className="achievement" key={achievement.year}><span>{achievement.year}</span><div><h3>{achievement.title}</h3><p>{achievement.event} · {achievement.detail}</p></div><Check size={17} /></div>)}</div></div></section>
 
-        <section id="contact" className="page-section contact-section"><div className="contact-copy"><p className="eyebrow">Contact</p><h2>Have an idea?<br /><em>Send me a note.</em></h2><p>Choose where you&apos;d like to find me.</p><div className="social-links"><a href={portfolio.social.github} target="_blank" rel="noreferrer" aria-label="Adriane on GitHub" title="GitHub"><Code2 size={21} /></a><a href={portfolio.social.linkedin} target="_blank" rel="noreferrer" aria-label="Adriane on LinkedIn" title="LinkedIn"><Globe2 size={21} /></a><a href={`mailto:${portfolio.email}`} aria-label={`Email Adriane at ${portfolio.email}`} title={portfolio.email}><Mail size={21} /></a></div></div></section>
+        <section id="contact" className="page-section contact-section"><div className="contact-copy"><p className="eyebrow">Contact</p><h2>Have an idea?<br /><em>Send me a note.</em></h2><p>Choose where you&apos;d like to find me.</p><div className="social-links"><a href={portfolio.social.github} target="_blank" rel="noreferrer" aria-label="Adriane on GitHub" title="GitHub"><GithubLogo size={21} /></a><a href={portfolio.social.linkedin} target="_blank" rel="noreferrer" aria-label="Adriane on LinkedIn" title="LinkedIn"><Globe2 size={21} /></a><a href={`mailto:${portfolio.email}`} aria-label={`Email Adriane at ${portfolio.email}`} title={portfolio.email}><Mail size={21} /></a></div></div></section>
       </main>
 
       <footer className="site-footer"><span>© 2026 {portfolio.name}</span><span>{portfolio.domain}</span><a href="#top">Back to top ↑</a></footer>
