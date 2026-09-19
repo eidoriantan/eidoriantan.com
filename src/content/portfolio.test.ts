@@ -13,11 +13,13 @@ describe('portfolio content', () => {
     expect(portfolio.projects.every((project) => project.url.startsWith('https://'))).toBe(true)
   })
 
-  it('preserves both confirmed national programming achievements', () => {
-    expect(portfolio.achievements.map((achievement) => achievement.year)).toEqual(['2024', '2023'])
+  it('preserves the confirmed programming achievements', () => {
+    expect(portfolio.achievements.map((achievement) => achievement.year)).toEqual(['2024', '2024', '2023', '2022'])
     expect(portfolio.achievements.map((achievement) => achievement.title)).toEqual([
       'National Champion in C++ Category',
+      'Regional Champion in C++ Category',
       'National Champion in C Category',
+      'Regional Champion in C Category',
     ])
   })
 })

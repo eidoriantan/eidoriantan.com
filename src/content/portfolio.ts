@@ -44,6 +44,8 @@ export const portfolio = {
   skills: ['JavaScript', 'TypeScript', 'Python', 'React.js', 'Node.js', 'Express.js', 'PHP', 'Laravel', 'CodeIgniter', 'Flask', 'Django', 'MySQL', 'SQL Server', 'PostgreSQL', 'MongoDB', 'Shopify', 'WordPress', 'Mobile development', 'AI agents', 'REST APIs', 'Cloud deployment'],
   achievements: [
     { year: '2024', title: 'National Champion in C++ Category', event: 'National CpE Programming Challenge', detail: 'Manila City' },
+    { year: '2024', title: 'Regional Champion in C++ Category', event: 'Regional CpE Programming Challenge', detail: 'Bacolod City' },
     { year: '2023', title: 'National Champion in C Category', event: 'National CpE Programming Challenge', detail: 'Laoag City' },
+    { year: '2022', title: 'Regional Champion in C Category', event: 'Regional CpE Programming Challenge', detail: 'Bacolod City' },
   ],
 } as const
