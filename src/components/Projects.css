@@ -1,0 +1,16 @@
+.heading-inline {
+  display: flex;
+  justify-content: space-between;
+  gap: 40px;
+  align-items: end;
+  max-width: none;
+}
+.heading-note { color: var(--muted); max-width: 310px; line-height: 1.7; font-size: 14px; margin-bottom: 4px; }
+
+.project-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 16px; }
+
+@media (max-width: 800px) {
+  .heading-inline { display: block; }
+  .heading-note { margin-top: 28px; }
+  .project-grid { grid-template-columns: 1fr; }
+}

@@ -1,0 +1,20 @@
+.site-footer {
+  max-width: 1600px;
+  margin: auto;
+  padding: 27px clamp(24px, 8vw, 132px);
+  border-top: 1px solid var(--line);
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  color: var(--muted);
+  font: 11px var(--font-mono);
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+}
+.site-footer a { text-decoration: none; color: var(--ink); }
+.site-footer a:hover { color: var(--accent); }
+
+@media (max-width: 800px) {
+  .site-footer { flex-wrap: wrap; }
+  .site-footer span:nth-child(2) { display: none; }
+}
