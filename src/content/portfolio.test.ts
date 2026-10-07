@@ -9,7 +9,7 @@ describe('portfolio content', () => {
   })
 
   it('contains all featured projects with working destinations', () => {
-    expect(portfolio.projects).toHaveLength(8)
+    expect(portfolio.projects).toHaveLength(10)
     expect(portfolio.projects.every((project) => project.url.startsWith('https://'))).toBe(true)
   })
 
