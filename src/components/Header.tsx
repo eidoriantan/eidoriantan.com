@@ -2,6 +2,7 @@ import { Mail, Menu, X } from 'lucide-react'
 import { useState } from 'react'
 import { portfolio } from '../content/portfolio'
 import { GithubLogo } from './GithubLogo'
+import { Logo } from './Logo'
 import './Header.css'
 
 const NAV_ITEMS = ['work', 'services', 'about', 'contact']
@@ -12,7 +13,7 @@ export function Header() {
   return (
     <header className="site-header">
       <a className="wordmark" href="#top" aria-label="Back to top">
-        <span className="mark">AT</span>
+        <Logo className="mark" />
         <span>{portfolio.shortName}</span>
       </a>
       <button

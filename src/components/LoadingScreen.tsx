@@ -1,3 +1,4 @@
+import { Logo } from './Logo'
 import './LoadingScreen.css'
 
 export function LoadingScreen({ isLoading }: { isLoading: boolean }) {
@@ -6,7 +7,7 @@ export function LoadingScreen({ isLoading }: { isLoading: boolean }) {
       className={isLoading ? 'loading-screen' : 'loading-screen loading-screen-hidden'}
       aria-hidden={!isLoading}
     >
-      <div className="loading-mark">AT</div>
+      <Logo className="loading-mark" />
       <p>
         Hi, I&apos;m Adriane<span className="loading-dots">...</span>
       </p>

@@ -21,15 +21,10 @@
   letter-spacing: -0.03em;
 }
 .mark {
-  width: 32px;
-  height: 32px;
-  display: grid;
-  place-items: center;
-  border: 1px solid var(--accent);
-  border-radius: 10px;
+  width: 34px;
+  height: 34px;
   color: var(--accent);
-  font: 11px var(--font-mono);
-  letter-spacing: -0.12em;
+  flex-shrink: 0;
 }
 
 .site-nav { display: flex; gap: 28px; margin-left: auto; }
